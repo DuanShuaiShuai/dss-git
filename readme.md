@@ -10,7 +10,12 @@
 
 删除分支：git branch -d <name>
 
-可以查看所有分支的所有操作记录:git reflog 
+可以查看所有分支的所有操作记录: git reflog 
 命令可以看到分支合并图：git log --graph
+```javascript
 git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除
 另一种方式是用git stash pop，恢复的同时把stash内容也删了
+
+你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
+git stash apply stash@{0}
+```
