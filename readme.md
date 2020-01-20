@@ -19,3 +19,5 @@ git stash apply恢复，但是恢复后，stash内容并不删除，你需要用
 你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
 git stash apply stash@{0}
 ```
+
+cherry-pick:让我们能复制一个特定的提交到当前分支，避免重复劳动。
