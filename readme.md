@@ -89,10 +89,28 @@ To github.com:michaelliao/learngit.git
 
 
 log
-
 git log：如果你想了解本地仓库的历史记录，最简单的命令就是使用
 git log --author=bob:你可以添加一些参数来修改他的输出，从而得到自己想要的结果。 只看某一个人的提交记录
 git log --pretty=oneline:一个压缩后的每一条提交记录只占一行的输出
 git log --graph --oneline --decorate --all:或者你想通过 ASCII 艺术的树形结构来展示所有的分支, 每个分支都标示了他的名字和标签
 git log --name-status:看看哪些文件改变了
 git log --help:这些只是你可以使用的参数中很小的一部分
+
+
+
+revert
+
+ git revert --no-commit f42955adb85
+ git add  .
+ git commit -m '***'
+ git push 
+
+ git revert --no-commit f7742cd..551c408
+git commit -a -m 'This reverts commit 7e345c9 and 551c408'
+
+
+cherry-pick
+
+git cherry-pick ****
+git add .  //如果有冲突就先解决冲突
+git commit -m '...'
