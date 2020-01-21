@@ -112,3 +112,9 @@ cherry-pick
 git cherry-pick ****
 git add .  //如果有冲突就先解决冲突
 git commit -m '...'
+
+
+
+
+
+git merge --squash issue1:将分支issue1上的所有提交合成一个commit并合并到master
